@@ -7,7 +7,7 @@ import { getEntryBySlug } from "astro:content";
 import image from "../images/hero.svg";
 
 const homepage = await getEntryBySlug("homepage", "index");
-const { banner, feature, services, workflow, call_to_action } = homepage.data;
+const { banner, feature, services, call_to_action } = homepage.data;
 ---
 
 <Base>
@@ -47,6 +47,9 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
       </div>
     </div>
   </section>
+
+  <!-- Call to Action -->
+  <Cta cta={call_to_action} />
 
   <!-- Features -->
   <section class="section bg-theme-light">
@@ -144,22 +147,4 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
     })
   }
 
-  <script>
-    import Swiper, { Autoplay, Pagination } from "swiper";
-    new Swiper(".service-carousel .swiper", {
-      modules: [Pagination, Autoplay],
-      autoplay: {
-        delay: 3000,
-      },
-      pagination: {
-        type: "bullets",
-        el: ".service-carousel .pagination",
-        clickable: true,
-      },
-    });
-  </script>
-  <!-- ./End service -->
-
-  <!-- Call to Action -->
-  <Cta cta={call_to_action} />
 </Base>
