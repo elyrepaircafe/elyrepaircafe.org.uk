@@ -1,6 +1,6 @@
 ---
 import Base from "@layouts/Base.astro";
-import { markdownify } from "@lib/utils/textConverter";
+import { markdownify, markdownifyBlock } from "@lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 const entry = await getEntryBySlug("faq", "index");
 const { title, description, faqs } = entry.data;
@@ -18,7 +18,7 @@ const { title, description, faqs } = entry.data;
                 <div class="faq-head relative">
                   <h4 set:html={markdownify(faq.title)} />
                 </div>
-                <p class="faq-body mt-4" set:html={markdownify(faq.answer)} />
+                <div class="faq-body mt-4" set:html={markdownifyBlock(faq.answer)} />
               </div>
             </div>
           ))

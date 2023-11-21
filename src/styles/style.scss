@@ -10,9 +10,20 @@
   @import "components";
   @import "navigation";
   @import "buttons";
-  @import '../../node_modules/swiper/swiper.scss';
+  @import "../../node_modules/swiper/swiper.scss";
 }
 
 @layer utilities {
   @import "utilities";
+}
+
+.faq-body {
+  p + p {
+    margin-top: 1em;
+  }
+
+  li {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
 }

@@ -1,10 +1,7 @@
 import { slug } from 'github-slugger';
 import { marked } from "marked";
 
-marked.use({
-  mangle: false,
-  headerIds: false,
-});
+marked.use();
 
 // slugify
 export const slugify = (content: string) => {
@@ -18,6 +15,12 @@ export const markdownify = (content: string | undefined) => {
   if (!content) return null;
 
   return marked.parseInline(content);
+};
+
+export const markdownifyBlock = (content: string | undefined) => {
+  if (!content) return null;
+
+  return marked.parse(content);
 };
 
 // humanize
