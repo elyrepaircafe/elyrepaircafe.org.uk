@@ -2,10 +2,11 @@
 banner:
   title: Would you like a hand fixing something?
   content: Ely Repair Cafe is a community event that brings together people with broken stuff with people who like to fix things.
-  button:
-    label: "Book an item for repair"
-    link: "/book/"
-    enable: true
+  buttons:
+    - label: "Book an item for repair"
+      link: "/book/"
+    - label: "Volunteer as a repairer"
+      link: "/volunteer-as-a-repairer/"
 
 # feature
 feature: 

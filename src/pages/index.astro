@@ -24,11 +24,11 @@ const { banner, feature, services, call_to_action } = homepage.data;
           }
 
           {
-            banner?.button?.enable && (
-              <a class="btn btn-primary mt-4" href={banner.button.link}>
-                {banner.button.label}
-              </a>
-            )
+            banner!.buttons.map((button, i) => (
+            <a class="btn btn-primary mt-4 mr-4" href={button.link}>
+              {button.label}
+            </a>
+            ))
           }
 
           {
