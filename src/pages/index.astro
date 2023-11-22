@@ -4,7 +4,9 @@ import Base from "@layouts/Base.astro";
 import Cta from "@layouts/components/Cta.astro";
 import { markdownify } from "@lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
-import image from "../images/hero.svg";
+import heroImage from "../images/hero.svg";
+import cambridgeCarbonFootprintLogo from "../images/logos/cambridge-carbon-footprint.png"
+import repairCafeLogo from "../images/logos/repair-cafe.png"
 
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, feature, services, call_to_action } = homepage.data;
@@ -35,9 +37,9 @@ const { banner, feature, services, call_to_action } = homepage.data;
             (
               <img
                 class="mx-auto mt-12"
-                src={image.src}
-                width={image.width}
-                height={image.height}
+                src={heroImage.src}
+                width={heroImage.width}
+                height={heroImage.height}
                 alt=""
                 style="height: 390px"
               />
@@ -77,6 +79,36 @@ const { banner, feature, services, call_to_action } = homepage.data;
             </div>
           ))
         }
+      </div>
+    </div>
+  </section>
+
+  <!-- Images -->
+  <section class="section bg-theme-light">
+    <div class="container">
+      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-2">
+        <div class="feature-card rounded-xl p-5 pb-8 text-center" style="background-color: #003ca4">
+        {
+                <Image
+                  class="mx-auto"
+                  alt="Cambridge Carbon Footprint"
+                  src={cambridgeCarbonFootprintLogo.src}
+                  height={184}
+                  width={244}
+                />
+        }
+        </div>
+        <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center"  style="background-color: #9300ff">
+        {
+                <Image
+                  class="mx-auto"
+                  alt="Repair Cafe"
+                  src={repairCafeLogo.src}
+                  height={184}
+                  width={184}
+                />
+        }
+        </div>
       </div>
     </div>
   </section>
