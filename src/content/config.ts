@@ -99,38 +99,6 @@ const faq_page = defineCollection({
   })
 })
 
-//pricing page schema
-const pricing_page = defineCollection({
-  schema: z.object({
-    title: z.string().optional(),
-    description: z.string().optional(),
-    draft: z.boolean().optional(),
-    plans: z.array(z.object({
-      title: z.string(),
-      subtitle: z.string(),
-      price: z.number(),
-      recommended: z.boolean().optional(),
-      type: z.string(),
-      features: z.array(z.string()).optional(),
-      button: z.object({
-        label: z.string(),
-        link: z.string().default("#"),
-        enable: z.boolean().default(true)
-      })
-    })).optional(),
-    call_to_action: z.object({
-      title: z.string().optional(),
-      content: z.string().optional(),
-      image: z.string(),
-      button: z.object({
-        label: z.string(),
-        link: z.string().default("#"),
-        enable: z.boolean().default(true)
-      }).optional()
-    }).optional()
-  })
-})
-
 // Interface for content
 export interface PageData {
   blog: string,
@@ -138,7 +106,6 @@ export interface PageData {
   // homePage: string,
   // contact: string,
   // faq: string,
-  // pricing: string
 }
 
 
@@ -149,5 +116,4 @@ export const collections = {
   // homepage: homepage,
   // contact: contact_page,
   // faq: faq_page,
-  // pricing: pricing_page
 };
