@@ -27,7 +27,7 @@ faqs:
 
 - title: Will I get a warranty?
   answer: |
-    There is no guarantee on the repair. Repairers will not be liable if any item suffers further damage during the attempted repair, does not work properly after you have left the repair cafe, or breaks down again in future.
+    There is no guarantee on the repair. Repairers will not be liable if any item suffers further damage during the attempted repair, does not work properly after you have left the Repair Cafe, or breaks down again in future.
 
     Please read the [repair agreement](/files/repair-agreement.pdf) and make sure you are happy with the terms before bringing your item.
 
@@ -49,7 +49,7 @@ faqs:
   answer: |
     Please bring any cables that are required to run the item. If it's battery powered, please make sure it is fully charged, or that you have some extra working batteries with you. We are very unlikely to be able to fix your item if it won't turn on.
 
-    We have a selection of common items—such as screws, clips, and fuses—in the repair cafe toolkit that can be used for the repair. If you item requires something more specialised, your repairer will try to help you identify the part and suggest where you might be able to order a new one. You can then book into a future repair cafe—either in Ely, or another one in the area—to get help fitting it. Alternatively, you might feel confident enough to try a repair on your own!
+    We have a selection of common items—such as screws, clips, and fuses—in the Repair Cafe toolkit that can be used for the repair. If you item requires something more specialised, your repairer will try to help you identify the part and suggest where you might be able to order a new one. You can then book into a future repair cafe—either in Ely, or another one in the area—to get help fitting it. Alternatively, you might feel confident enough to try a repair on your own!
 
 - title: What happens when I arrive?
   answer: |
@@ -66,14 +66,14 @@ faqs:
     Please [email us](mailto:info@elyrepaircafe.org.uk) to let us know you won't need your booking any longer.
 
 - title: Will there be any food or drink?
-  answer: Absolutely! We're hoping to provide tea, coffee, and cake for purchase while you wait. Any profits will be used to help run more repair cafes in the future.
+  answer: Absolutely! We're hoping to provide tea, coffee, and cake for purchase while you wait. Any profits will be used to help run more Repair Cafes in the future.
 
 - title: How much does it cost?
-  answer: There is no cost. We glady accept donations so that we can run more repair cafes in future. Look out for posters at the venue for details of how to donate. Profit from any purchased refreshments will also help, so please feel free to enjoy those whilst you're waiting!
+  answer: There is no cost. We glady accept donations so that we can run more Repair Cafes in future. Look out for posters at the venue for details of how to donate. Profit from any purchased refreshments will also help, so please feel free to enjoy those whilst you're waiting!
 
 - title: Can I leave and come back to pick up my repaired item later?
   answer: |
-    Part of the repair cafe ethos is that the repair process should be a collaboration between the repairer and the person with a broken item. It can be a useful learning experience for you. Learning a bit about simple repairs can give you the skills and confidence to fix other items in your home in future.
+    Part of the Repair Cafe ethos is that the repair process should be a collaboration between the repairer and the person with a broken item. It can be a useful learning experience for you. Learning a bit about simple repairs can give you the skills and confidence to fix other items in your home in future.
 
     The repairer may also need information or an extra pair of hands during the repair.
 ---
