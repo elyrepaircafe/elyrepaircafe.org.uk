@@ -6,7 +6,7 @@ import { markdownify } from "@lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 import heroImage from "../images/hero.svg";
 import cambridgeCarbonFootprintLogo from "../images/logos/cambridge-carbon-footprint.png"
-import repairCafeLogo from "../images/logos/repair-cafe.png"
+import cambridgeshireRepairCafeNetworkLogo from "../images/logos/cambridgeshire-repair-cafe-network.webp"
 
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, feature, services, call_to_action } = homepage.data;
@@ -87,7 +87,7 @@ const { banner, feature, services, call_to_action } = homepage.data;
   <section class="section bg-theme-light">
     <div class="container">
       <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-2">
-        <div class="feature-card rounded-xl p-5 pb-8 text-center" style="background-color: #003ca4">
+        <div class="feature-card rounded-xl p-5 flex items-center justify-center" style="background-color: #003ca4">
         {
                 <Image
                   class="mx-auto"
@@ -98,14 +98,14 @@ const { banner, feature, services, call_to_action } = homepage.data;
                 />
         }
         </div>
-        <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center"  style="background-color: #9300ff">
+        <div class="feature-card rounded-xl bg-white p-5 flex items-center justify-center">
         {
                 <Image
                   class="mx-auto"
-                  alt="Repair Cafe"
-                  src={repairCafeLogo.src}
+                  alt="Cambridgeshire Repair Cafe Network"
+                  src={cambridgeshireRepairCafeNetworkLogo.src}
                   height={184}
-                  width={184}
+                  aspectRatio={3.12154696}
                 />
         }
         </div>
