@@ -69,11 +69,15 @@ faqs:
   answer: Absolutely! We're hoping to provide tea, coffee, and cake for purchase while you wait. Any profits will be used to help run more Repair Cafes in the future.
 
 - title: How much does it cost?
-  answer: There is no cost. We glady accept donations so that we can run more Repair Cafes in future. Look out for posters at the venue for details of how to donate. Profit from any purchased refreshments will also help, so please feel free to enjoy those whilst you're waiting!
+  answer: There is no cost. We gladly accept donations so that we can run more Repair Cafes in future. Look out for posters at the venue for details of how to donate. Profit from any purchased refreshments will also help, so please feel free to enjoy those whilst you're waiting!
 
 - title: Can I leave and come back to pick up my repaired item later?
   answer: |
     Part of the Repair Cafe ethos is that the repair process should be a collaboration between the repairer and the person with a broken item. It can be a useful learning experience for you. Learning a bit about simple repairs can give you the skills and confidence to fix other items in your home in future.
 
     The repairer may also need information or an extra pair of hands during the repair.
+    
+- title: How can I help spread the word?
+  answer: |
+    You're awesome—thanks for your support! We have a [Facebook page](https://www.facebook.com/people/Ely-Repair-Caf%C3%A9/61553949502819/) you can follow and share posts from. You can also [download a poster](/files/ely-repair-cafe-poster.pdf) and a [Facebook graphic](/files/ely-repair-cafe-facebook-post.png) to share.
 ---
