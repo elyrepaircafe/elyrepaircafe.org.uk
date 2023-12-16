@@ -1,16 +1,16 @@
 {
   "main": [
     {
-      "name": "Home",
-      "url": "/"
-    },
-    {
       "name": "Book",
       "url": "/book/"
     },
     {
       "name": "FAQ",
       "url": "/faq/"
+    },
+    {
+      "name": "Donate",
+      "url": "/donate/"
     }
   ],
   "footer": []
