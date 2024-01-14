@@ -2,6 +2,7 @@
 import Base from "@layouts/Base.astro";
 import {markdownify} from "@lib/utils/textConverter";
 import {getEntryBySlug} from "astro:content";
+import MailingListSignUp from "../layouts/components/MailingListSignUp.astro";
 
 const entry = await getEntryBySlug("book", "index");
 const {title, description} = entry?.data;
@@ -12,7 +13,7 @@ const {title, description} = entry?.data;
     <div class="container">
       <h1 class="text-center font-normal" set:html={markdownify(title)}/>
       <div class="section row pb-0">
-        <div class="md:col-126 col-12 lg:col-12">
+        <div class="md:col-126 col-12 lg:col-12 mx-auto content-center">
           <div
             class="flex items-center p-4 mb-4 text-sky-800 border-t-4 border-sky-300 bg-sky-50 dark:text-sky-400 dark:bg-gray-800 dark:border-sky-800"
             role="alert">
@@ -22,44 +23,12 @@ const {title, description} = entry?.data;
                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
             </svg>
             <div class="ms-3 pl-4">
-              <p class="mb-2">We have reached our current capacity for <b>electrical, electronic, furniture, ornaments, and jewellery</b>. You can still book in your item and we will add you to a waitlist. We will aim to contact you one week before the Repair Cafe with a time for your repair.</p>
-              <p><b>We have slots left for:</b></p>
-                <ul class="list-disc ml-4">
-                  <li>Clothes/textiles repairs and alterations</li>
-                  <li>Bicycles</li>
-                </ul>
+              <p class="mb-2">We have now reached the limit for the number of repairs our volunteers will be able to
+                make on the day. We hope to be able to organise a small number of walk-in appointments on 27 January
+                2024. Please sign up to our mailing list for further information.</p>
             </div>
           </div>
-          <iframe
-            data-tally-src="https://tally.so/embed/mOXKDg?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-            loading="lazy"
-            width="100%"
-            height="1833"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="Ely Repair Cafe booking form"></iframe>
-          <script>
-            var d = document,
-              w = "https://tally.so/widgets/embed.js",
-              v = function () {
-                "undefined" != typeof Tally
-                  ? Tally.loadEmbeds()
-                  : d
-                    .querySelectorAll("iframe[data-tally-src]:not([src])")
-                    .forEach(function (e) {
-                      e.src = e.dataset.tallySrc;
-                    });
-              };
-            if ("undefined" != typeof Tally) v();
-            else if (d.querySelector('script[src="' + w + '"]') == null) {
-              var s = d.createElement("script");
-              (s.src = w),
-                (s.onload = v),
-                (s.onerror = v),
-                d.body.appendChild(s);
-            }
-          </script>
+          <MailingListSignUp/>
         </div>
       </div>
     </div>
