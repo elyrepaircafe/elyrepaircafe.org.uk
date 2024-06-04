@@ -79,5 +79,5 @@ faqs:
     
 - title: How can I help spread the word?
   answer: |
-    You're awesome—thanks for your support! We have a [Facebook page](https://www.facebook.com/people/Ely-Repair-Caf%C3%A9/61553949502819/) you can follow and share posts from. You can also [download a poster](/files/ely-repair-cafe-poster.pdf) and a [Facebook graphic](/files/ely-repair-cafe-facebook-post.png) to share.
+    You're awesome—thanks for your support! We have a [Facebook page](https://www.facebook.com/people/Ely-Repair-Caf%C3%A9/61553949502819/) you can follow and share posts from.
 ---
