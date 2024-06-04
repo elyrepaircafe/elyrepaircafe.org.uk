@@ -11,6 +11,10 @@
     {
       "name": "Donate",
       "url": "/donate/"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog/"
     }
   ],
   "footer": []

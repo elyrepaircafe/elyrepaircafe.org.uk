@@ -1,4 +1,4 @@
 ---
 title: "Latest news"
-description: "this is meta description"
+description: "Latest news from Ely Repair Cafe"
 ---
