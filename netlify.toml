@@ -17,6 +17,11 @@ Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
   status = 301
   force = true
 
+[[redirects]]
+  from = "/volunteer-as-a-repairer/"
+  to = "/volunteer/"
+  status = 301
+
 # Temporary redirect to allow people to sign up to mailing list without creating a page
 [[redirects]]
   from = "/updates/"

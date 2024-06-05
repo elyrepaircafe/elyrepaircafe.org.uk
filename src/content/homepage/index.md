@@ -5,8 +5,8 @@ banner:
   buttons:
     - label: "Book an item for repair"
       link: "/book/"
-    - label: "Volunteer as a repairer"
-      link: "/volunteer-as-a-repairer/"
+    - label: "Volunteer as a repairer or organiser"
+      link: "/volunteer/"
 
 # feature
 feature: 
