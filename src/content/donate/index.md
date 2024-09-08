@@ -7,16 +7,16 @@ introduction: |
 
 donations:
   - buttonText: Donate £5
-    example: £5 allows us to run this website and our email address for a year
-    url: https://donate.stripe.com/5kA4hF4Ylbhd23e5kk
+    example: £5 allows us to run this website for six months
+    url: https://square.link/u/tslItccb
   - buttonText: Donate £10
     example: £10 helps cover the costs of printing posters and forms
-    url: https://donate.stripe.com/00g8xV0I5fxt0ZaeUV
+    url: https://square.link/u/axIrrqYA
   - buttonText: Donate £20
     example: £20 covers the costs of replacing used items in the repair kit
-    url: https://donate.stripe.com/bIY7tR1M92KHazK002
-  - buttonText: Donate a custom amount
-    example: Donate as much as you want
-    url: https://donate.stripe.com/bIY8xV0I5995fU43cf
+    url: https://square.link/u/lnpVWdqC
+  - buttonText: Donate £50
+    example: £50 covers event insurance and borrowing the repair toolkit
+    url: https://square.link/u/lreR5fdj
 
 ---
