@@ -14,36 +14,21 @@ const {title, description} = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)}/>
       <div class="section row pb-0">
         <div class="md:col-126 col-12 lg:col-12 mx-auto content-center">
-          <iframe
-            data-tally-src="https://tally.so/embed/mOXKDg?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-            loading="lazy"
-            width="100%"
-            height="1833"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="Ely Repair Cafe booking form"></iframe>
-          <script>
-            var d = document,
-              w = "https://tally.so/widgets/embed.js",
-              v = function () {
-                "undefined" != typeof Tally
-                  ? Tally.loadEmbeds()
-                  : d
-                    .querySelectorAll("iframe[data-tally-src]:not([src])")
-                    .forEach(function (e) {
-                      e.src = e.dataset.tallySrc;
-                    });
-              };
-            if ("undefined" != typeof Tally) v();
-            else if (d.querySelector('script[src="' + w + '"]') == null) {
-              var s = d.createElement("script");
-              (s.src = w),
-                (s.onload = v),
-                (s.onerror = v),
-                d.body.appendChild(s);
-            }
-          </script>
+          <div
+            class="flex items-center p-4 mb-4 text-sky-800 border-t-4 border-sky-300 bg-sky-50 dark:text-sky-400 dark:bg-gray-800 dark:border-sky-800"
+            role="alert">
+            <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                 viewBox="0 0 20 20">
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+            </svg>
+            <div class="ms-3 pl-4">
+              <p class="mb-2">Bookings are now closed for the Repair Cafe on 25 January but we're hoping to be back at
+                Ely library in April. Sign up to our mailing list below to be amongst the first to be told when
+                the next date is confirmed.</p>
+            </div>
+          </div>
+          <MailingListSignUp/>
         </div>
       </div>
     </div>
