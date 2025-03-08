@@ -5,28 +5,26 @@ banner:
   buttons:
     - label: "Book an item for repair"
       link: "/book/"
-    - label: "Volunteer as a repairer or organiser"
-      link: "/volunteer/"
 
 # feature
-feature: 
+feature:
   title: What does a Repair Cafe do?
   features:
-  - name: Reduces waste
-    icon: /images/reduction.png
-    content: Fixing a broken or worn out item saves money and resources, and reduces CO² emissions.
-  - name: Shares skills
-    icon: /images/soft-skills.png
-    content: You'll get the opportunity to learn how to diagnose and repair things, giving you confidence to work on your own items.
-  - name: Connects people
-    icon: /images/handshake.png
-    content: Repair Cafes bring together all kinds of people from the local community in a positive environment.
+    - name: Reduces waste
+      icon: /images/reduction.png
+      content: Fixing a broken or worn out item saves money and resources, and reduces CO² emissions.
+    - name: Shares skills
+      icon: /images/soft-skills.png
+      content: You'll get the opportunity to learn how to diagnose and repair things, giving you confidence to work on your own items.
+    - name: Connects people
+      icon: /images/handshake.png
+      content: Repair Cafes bring together all kinds of people from the local community in a positive environment.
 
 # services
 services: []
 
 # workflow
-workflow: 
+workflow:
   title: "Experience the best workflow with us"
   image: "/images/banner.png"
   description: ""
