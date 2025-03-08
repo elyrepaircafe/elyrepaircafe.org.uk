@@ -32,7 +32,7 @@ workflow:
 # call_to_action
 call_to_action:
   title: When is the next event?
-  content: The next Ely Repair Cafe is taking place at Ely Library between 11am and 2pm on Saturday, 25 January 2025 and we'd love to see you there
+  content: We're in the process of organising the next event and will publicise the date once it has been finalised
   button:
     enable: true
     label: "Book an item for repair"
