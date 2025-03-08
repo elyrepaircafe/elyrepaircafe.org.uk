@@ -18,7 +18,10 @@ const { title, description, faqs } = entry.data;
                 <div class="faq-head relative">
                   <h4 set:html={markdownify(faq.title)} />
                 </div>
-                <div class="faq-body mt-4" set:html={markdownifyBlock(faq.answer)} />
+                <div
+                  class="faq-body mt-4"
+                  set:html={markdownifyBlock(faq.answer)}
+                />
               </div>
             </div>
           ))

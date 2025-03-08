@@ -1,28 +1,31 @@
 ---
 import Base from "@layouts/Base.astro";
-import {markdownify, markdownifyBlock} from "@lib/utils/textConverter";
-import {getEntryBySlug} from "astro:content";
+import { markdownify, markdownifyBlock } from "@lib/utils/textConverter";
+import { getEntryBySlug } from "astro:content";
 const entry = await getEntryBySlug("donate", "index");
-const {title, description, introduction, donations} = entry.data;
+const { title, description, introduction, donations } = entry.data;
 ---
 
 <Base title={title} description={description}>
   <section class="section">
     <div class="container">
-      <h1 class="text-center font-normal" set:html={markdownify(title)}/>
-      <p class="mt-4" set:html={markdownify(introduction)}/>
+      <h1 class="text-center font-normal" set:html={markdownify(title)} />
+      <p class="mt-4" set:html={markdownify(introduction)} />
       <div class="section row -mt-6">
         {
           donations?.map((donation) => (
             <div class="col-12 mt-6 md:col-6">
               <div class="p-12 shadow">
                 <div class="relative">
-                  <h4 set:html={markdownify(donation.name)}/>
-                  <p class="mb-4" set:html={markdownify(donation.example)}/>
-                  <a href={donation.url}
-                     rel="noopener noreferrer nofollow"
-                     class="btn me-4 mb-4 btn-primary border-primary hover:text-white hover:no-underline"
-                  >{donation.buttonText}</a>
+                  <h4 set:html={markdownify(donation.name)} />
+                  <p class="mb-4" set:html={markdownify(donation.example)} />
+                  <a
+                    href={donation.url}
+                    rel="noopener noreferrer nofollow"
+                    class="btn btn-primary mb-4 me-4 border-primary hover:text-white hover:no-underline"
+                  >
+                    {donation.buttonText}
+                  </a>
                 </div>
               </div>
             </div>

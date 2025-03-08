@@ -24,10 +24,10 @@ export interface Props {
 const { title, meta_title, description, image, noindex, canonical } =
   Astro.props;
 
-let combinedTitle = title || config.site.title
-console.log(combinedTitle)
+let combinedTitle = title || config.site.title;
+console.log(combinedTitle);
 if (combinedTitle !== config.site.title) {
-  combinedTitle = `${combinedTitle} · ${config.site.title}`
+  combinedTitle = `${combinedTitle} · ${config.site.title}`;
 }
 ---
 

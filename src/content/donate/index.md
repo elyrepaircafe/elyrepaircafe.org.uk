@@ -18,5 +18,4 @@ donations:
   - buttonText: Donate £50
     example: £50 covers event insurance and borrowing the repair toolkit
     url: https://square.link/u/lreR5fdj
-
 ---
