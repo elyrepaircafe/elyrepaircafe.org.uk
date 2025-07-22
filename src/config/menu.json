@@ -1,8 +1,8 @@
 {
   "main": [
     {
-      "name": "Book",
-      "url": "/book/"
+      "hide_jef41_name": "Book",
+      "hide_jef41_url": "/book/"
     },
     {
       "name": "FAQ",
