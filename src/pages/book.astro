@@ -1,11 +1,13 @@
 ---
-import Base from "@layouts/Base.astro";
-import {markdownify} from "@lib/utils/textConverter";
-import {getEntryBySlug} from "astro:content";
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
 import MailingListSignUp from "../layouts/components/MailingListSignUp.astro";
 
-const entry = await getEntryBySlug("book", "index");
-const {title, description} = entry?.data;
+const entry = (await getEntry("book", "-index")) as CollectionEntry<"book">;
+const { title, description } = entry.data;
 ---
 
 <Base title={title} description={description}>

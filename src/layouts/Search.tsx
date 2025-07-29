@@ -1,6 +1,7 @@
-import config from "@config/config.json";
-import dateFormat from "@lib/utils/dateFormat";
-import { humanize, slugify } from "@lib/utils/textConverter";
+import React from "react";
+import config from "@/config/config.json";
+import dateFormat from "@/lib/utils/dateFormat";
+import { humanize, slugify } from "@/lib/utils/textConverter";
 import Fuse from "fuse.js";
 import { useEffect, useRef, useState } from "react";
 const { summary_length } = config.settings;
@@ -24,7 +25,7 @@ export default function SearchBar({ searchList }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [inputVal, setInputVal] = useState("");
   const [searchResults, setSearchResults] = useState<SearchResult[] | null>(
-    null
+    null,
   );
 
   const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
@@ -100,7 +101,7 @@ export default function SearchBar({ searchList }: Props) {
                 height={230}
               />
             )}
-            <ul className="mb-4 mt-4 flex flex-wrap items-center space-x-3 text-text">
+            <ul className="mt-4 mb-4 flex flex-wrap items-center space-x-3 text-text">
               <li>
                 {item.data.authors.map((author: string) => (
                   <a

@@ -1,12 +1,12 @@
 <h1 align=center>Bigspring Light Astro</h1>
 <p align=center>Bigspring is a highly customizable Astro theme designed specifically for SaaS & marketing websites.  
 </p>
-<h2 align="center"> <a target="_blank" href="https://bigspring-light-astro.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbigspring-light-astro.vercel.app%2F&form_factor=desktop">Page Speed (100%)🚀</a>
+<h2 align="center"> <a target="_blank" href="https://tf-bigspring-light-astro.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbigspring-light-astro.vercel.app%2F&form_factor=desktop">Page Speed (100%)🚀</a>
 </h2>
 
 <p align=center>
-  <a href="https://github.com/withastro/astro/releases/tag/astro%402.0.11" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=ASTRO&message=2.0&color=000&logo=astro" />
+  <a href="https://github.com/withastro/astro/releases/tag/astro%405.5.2" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=ASTRO&message=5.5&color=000&logo=astro" />
   </a>
 
   <a href="https://github.com/themefisher/bigspring-light-astro/blob/main/LICENSE">

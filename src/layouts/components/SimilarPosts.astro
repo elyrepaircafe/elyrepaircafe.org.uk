@@ -1,28 +1,28 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  posts: CollectionEntry<"blog">[];
+};
 const { posts } = Astro.props;
-import config from "@config/config.json";
-const { blog_folder } = config.settings;
 ---
 
 <div class="row justify-center">
   {
-    posts.map((post: any) => (
+    posts.map((post) => (
       <div class={"col-12 mb-4 sm:col-4"}>
-        {post.data.image && (
+        {post.data.cover && (
           <Image
             class="rounded-lg"
-            src={post.data.image}
+            src={post.data.cover}
             alt={post.data.title}
             width={445}
             height={230}
           />
         )}
         <h3 class="h4">
-          <a
-            href={`/${blog_folder}/${post.slug}`}
-            class="block hover:text-primary"
-          >
+          <a href={`/blog/${post.id}`} class="block hover:text-primary">
             {post.data.title}
           </a>
         </h3>

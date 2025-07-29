@@ -10,15 +10,3 @@ X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
 Referrer-Policy = "same-origin"
 Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-
-[[redirects]]
-  from = "https://elyrepaircafe.netlify.app"
-  to = "https://elyrepaircafe.org.uk"
-  status = 301
-  force = true
-
-# Temporary redirect to allow people to sign up to mailing list without creating a page
-[[redirects]]
-  from = "/updates/"
-  to = "/book/"
-  status = 302
