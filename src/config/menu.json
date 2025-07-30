@@ -1,21 +1,43 @@
 {
   "main": [
     {
-      "hide_jef41_name": "Book",
-      "hide_jef41_url": "/book/"
+      "hide_name": "Contact",
+      "hide_url": "/contact"
+    },
+    {
+      "hide_name": "Book",
+      "hide_url": "/book"
     },
     {
       "name": "FAQ",
-      "url": "/faq/"
+      "url": "/faq"
     },
     {
       "name": "Donate",
-      "url": "/donate/"
+      "url": "/donate"
     },
     {
       "name": "Blog",
-      "url": "/blog/"
+      "url": "/blog"
     }
   ],
-  "footer": []
+  "footer": [
+    {
+      "name": "Support",
+      "menu": [
+        {
+          "text": "FAQ",
+          "url": "/faq"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "hide_text": "Terms & Conditions",
+          "hide_url": "/terms-conditions"
+        }
+      ]
+    }
+  ]
 }

@@ -1,20 +1,19 @@
 {
   "site": {
-    "title": "Ely Repair Cafe",
+    "title": "Ely Repair Café",
     "base_url": "https://elyrepaircafe.org.uk",
     "base_path": "/",
-    "trailing_slash": true,
+    "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "",
     "logo_width": "200",
     "logo_height": "38",
-    "logo_text": "Ely Repair Cafe"
+    "logo_text": "Ely Repair Café"
   },
 
   "settings": {
     "pagination": 4,
-    "summary_length": 200,
-    "blog_folder": "blog"
+    "summary_length": 200
   },
 
   "nav_button": {
@@ -24,13 +23,15 @@
   },
 
   "params": {
+    "contact_form_action": "",
+    "tag_manager_id": "",
     "footer_content": "",
-    "copyright": "Copyright ©️2025 Ely Repair Cafe"
+    "copyright": "Copyright ©️2025 Ely Repair Café"
   },
 
   "metadata": {
-    "meta_author": "Ely Repair Cafe volunteers",
+    "meta_author": "Ely Repair Café volunteers",
     "meta_image": "",
-    "meta_description": "Repair Cafe in Ely, Cambridgeshire"
+    "meta_description": "Repair Café in Ely, Cambridgeshire"
   }
 }
