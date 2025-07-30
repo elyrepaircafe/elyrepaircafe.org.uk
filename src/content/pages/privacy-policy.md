@@ -24,7 +24,7 @@ info@elyrepaircafe.org.uk
 
 ##### We collect or use the following information to receive donations or funding and organise fundraising activities:
 
-- we do not save or store infomration from funders or donors, unless explicitly asked to do so.
+- we do not save or store information from funders or donors, unless explicitly asked to do so.
 
 ##### We collect or use the following personal information for recruitment purposes:
 
@@ -50,25 +50,22 @@ Which lawful basis we rely on may affect your data protection rights which are s
 - Your right to object to processing - You have the right to object to the processing of your personal data. [Read more about the right to object to processing](https://ico.org.uk/for-organisations/advice-for-small-organisations/privacy-notices-and-cookies/create-your-own-privacy-notice/your-data-protection-rights/#rto).
 - Your right to data portability - You have the right to ask that we transfer the personal information you gave us to another organisation, or to you. [Read more about the right to data portability](https://ico.org.uk/for-organisations/advice-for-small-organisations/privacy-notices-and-cookies/create-your-own-privacy-notice/your-data-protection-rights/#rtdp).
 - Your right to withdraw consent – When we use consent as our lawful basis you have the right to withdraw your consent at any time. [Read more about the right to withdraw consent](https://ico.org.uk/for-organisations/advice-for-small-organisations/privacy-notices-and-cookies/create-your-own-privacy-notice/your-data-protection-rights/#rtwc).
+
 If you make a request, we must respond to you without undue delay and in any event within one month.
+
 To make a data protection rights request, please contact us using the contact details at the top of this privacy notice.
-Our lawful bases for the collection and use of your data
-Our lawful bases for collecting or using personal information to provide services and goods, including delivery and third party referrals are:
-- Consent - we have permission from you after we gave you all the relevant information. All of your data protection rights may apply, except the right to object. To be clear, you do have the right to withdraw your consent at any time.
-- Legal obligation – we have to collect or use your information so we can comply with the law. All of your data protection rights may apply, except the right to erasure, the right to object and the right to data portability.
-Our lawful bases for collecting or using personal information to receive donations or funding and organise fundraising activities are:
-- Consent - we have permission from you after we gave you all the relevant information. All of your data protection rights may apply, except the right to object. To be clear, you do have the right to withdraw your consent at any time.
-Our lawful bases for collecting or using personal information for recruitment purposes are:
-- Consent - we have permission from you after we gave you all the relevant information. All of your data protection rights may apply, except the right to object. To be clear, you do have the right to withdraw your consent at any time.
-Our lawful bases for collecting or using personal information for dealing with queries, complaints or claims are:
-- Consent - we have permission from you after we gave you all the relevant information. All of your data protection rights may apply, except the right to object. To be clear, you do have the right to withdraw your consent at any time.
+
+#### Our lawful bases for the collection and use of your data
+##### Our lawful bases for collecting or using personal information to provide services and goods, including delivery and third party referrals are:
+-  Consent - we have permission from you after we gave you all the relevant information. All of your data protection rights may apply, except the right to object. To be clear, you do have the right to withdraw your consent at any time.
 
 #### Where we get personal information from
 
 - Directly from you
+
 #### How long we keep information
 
-We will retain records of items that were seen for repair for a duration of 12 months. 
+We retain records of items that were seen for repair for a duration of 12 months. 
 For more information on how long we store your personal information or the criteria we use to determine this please contact us using the details provided above. 
 
 #### Joint data controllers
