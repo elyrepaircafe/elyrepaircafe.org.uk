@@ -1,27 +1,32 @@
 ---
-import Base from "@layouts/Base.astro";
-import { markdownify, markdownifyBlock } from "@lib/utils/textConverter";
-import { getEntryBySlug } from "astro:content";
-const entry = await getEntryBySlug("faq", "index");
+import Base from "@/layouts/Base.astro";
+//import { markdownify } from "@/lib/utils/textConverter";
+import { marked } from 'marked';
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+const entry = (await getEntry("faq", "-index")) as CollectionEntry<"faq">;
 const { title, description, faqs } = entry.data;
 ---
 
 <Base title={title} description={description}>
   <section class="section">
     <div class="container">
-      <h1 class="text-center font-normal" set:html={markdownify(title)} />
+      <h1 class="text-center font-normal" set:html={marked(title)} />
       <div class="section row -mt-6">
         {
           faqs?.map((faq) => (
             <div class="col-12 mt-6 md:col-6">
               <div class="p-12  shadow">
                 <div class="faq-head relative">
-                  <h4 set:html={markdownify(faq.title)} />
+                  <h4 set:html={marked(faq.title)} />
                 </div>
-                <div
-                  class="faq-body mt-4"
-                  set:html={markdownifyBlock(faq.answer)}
-                />
+                <div class="faq-body mt-4
+                  [&_p]:mb-4 [&_p]:leading-relaxed
+                  [&_ul]:mt-0 [&_ul]:mb-4 [&_ul]:pl-6 [&_ul]:list-disc
+                  [&_li]:mb-0"
+                set:html={marked(faq.answer)} />
+                <!-- div class="faq-body mt-4" set:html={markdownify(faq.answer)} /-->
               </div>
             </div>
           ))
@@ -30,3 +35,18 @@ const { title, description, faqs } = entry.data;
     </div>
   </section>
 </Base>
+
+<style>
+  .faq-body ul {
+    margin-top: 0.;
+    margin-bottom: 0.;
+    padding-left: 1.65rem;
+    list-style-type: disc;
+    color: #f00;
+  }
+
+  .faq-body li {
+    margin-bottom: 0.;
+    color: #ff0;
+  }
+</style>

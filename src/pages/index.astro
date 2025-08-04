@@ -1,15 +1,19 @@
 ---
-import { Image } from "@astrojs/image/components";
-import Base from "@layouts/Base.astro";
-import Cta from "@layouts/components/Cta.astro";
-import { markdownify } from "@lib/utils/textConverter";
-import { getEntryBySlug } from "astro:content";
-import heroImage from "../images/hero.svg";
+import { Image } from "astro:assets";
+import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/components/Cta.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import { getEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
 import cambridgeCarbonFootprintLogo from "../images/logos/cambridge-carbon-footprint.png";
 import cambridgeshireRepairCafeNetworkLogo from "../images/logos/cambridgeshire-repair-cafe-network.webp";
 
-const homepage = await getEntryBySlug("homepage", "index");
-const { banner, feature, services, call_to_action } = homepage.data;
+const homepage = (await getEntry(
+  "homepage",
+  "-index"
+)) as CollectionEntry<"homepage">;
+const { banner, feature, services, workflow, call_to_action } = homepage.data;
 ---
 
 <Base>
@@ -25,26 +29,25 @@ const { banner, feature, services, call_to_action } = homepage.data;
             )
           }
 
-          <!-- hide_jef41_ {
-            banner!.buttons.map((button, i) => (
-              <a class="btn btn-primary mr-4 mt-4" href={button.link}>
-                {button.label}
+          {
+            banner?.button?.enable && (
+              <a class="btn btn-primary mt-4" href={banner.button.link}>
+                {banner.button.label}
               </a>
-            ))
+            )
           }
 
           {
-            (
-              <img
+            banner?.image && (
+              <Image
                 class="mx-auto mt-12"
-                src={heroImage.src}
-                width={heroImage.width}
-                height={heroImage.height}
-                alt=""
-                style="height: 390px"
+                src={banner?.image}
+                width={452}
+                height={390}
+                alt="banner image"
               />
             )
-        }-->
+          }
         </div>
       </div>
     </div>
@@ -52,16 +55,16 @@ const { banner, feature, services, call_to_action } = homepage.data;
 
   <!-- Call to Action -->
   <Cta cta={call_to_action} />
-
+  
   <!-- Features -->
-  <section class="section bg-theme-light">
+  <section class="section bg-light">
     <div class="container">
       <div class="text-center">
-        <h2>{markdownify(feature!.title)}</h2>
+        <h2>{markdownify(feature.title)}</h2>
       </div>
       <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
         {
-          feature!.features.map((item, i) => (
+          feature.features.map((item) => (
             <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
               {item.icon && (
                 <Image
@@ -73,7 +76,7 @@ const { banner, feature, services, call_to_action } = homepage.data;
                 />
               )}
               <div class="mt-4">
-                <p class="h5" set:html={markdownify(item!.name)} />
+                <p class="h5" set:html={markdownify(item.name)} />
                 <p class="mt-3">{item.content}</p>
               </div>
             </div>
@@ -96,7 +99,7 @@ const { banner, feature, services, call_to_action } = homepage.data;
               <Image
                 class="mx-auto"
                 alt="Cambridge Carbon Footprint"
-                src={cambridgeCarbonFootprintLogo.src}
+                src={cambridgeCarbonFootprintLogo}
                 height={184}
                 width={244}
               />
@@ -111,7 +114,7 @@ const { banner, feature, services, call_to_action } = homepage.data;
               <Image
                 class="mx-auto"
                 alt="Cambridgeshire Repair Cafe Network"
-                src={cambridgeshireRepairCafeNetworkLogo.src}
+                src={cambridgeshireRepairCafeNetworkLogo}
                 height={184}
                 aspectRatio={3.12154696}
               />
@@ -124,17 +127,17 @@ const { banner, feature, services, call_to_action } = homepage.data;
 
   <!-- Services -->
   {
-    services!.map((service, index: number) => {
+    services!.map((service, index) => {
       const isOdd = index % 2 > 0;
       return (
-        <section class={`section ${isOdd && "bg-theme-light"}`}>
+        <section class={`section ${isOdd && "bg-light"}`}>
           <div class="container">
             <div class="items-center gap-8 md:grid md:grid-cols-2">
               <div class={`service-carousel ${!isOdd && "md:order-2"}`}>
                 {service!.images!.length > 1 ? (
                   <div class="swiper">
                     <div class="swiper-wrapper">
-                      {service!.images?.map((image: string) => (
+                      {service.images?.map((image) => (
                         <div class="swiper-slide">
                           <Image
                             class="mx-auto"
@@ -164,7 +167,7 @@ const { banner, feature, services, call_to_action } = homepage.data;
                 class={`service-content mt-5 md:mt-0 ${!isOdd && "md:order-1"}`}
               >
                 <h2 class="font-bold leading-[40px]">{service?.title}</h2>
-                <p class="mb-2 mt-4">{service?.content}</p>
+                <p class="mt-4 mb-2">{service?.content}</p>
                 {service?.button?.enable && (
                   <a
                     href={service?.button.link}
@@ -187,4 +190,45 @@ const { banner, feature, services, call_to_action } = homepage.data;
       );
     })
   }
+  <!-- /End service -->
+
+  <!-- Workflow >
+  <section class="section pb-0">
+    <div class="mb-8 text-center">
+      <h2
+        class="mx-auto max-w-[400px] font-bold leading-[44px]"
+        set:html={workflow?.title}
+      />
+      <p class="mt-3" set:html={workflow?.description} />
+    </div>
+    <Image
+      src={workflow!.image}
+      alt="workflow image"
+      width={1920}
+      height={414}
+    />
+  </section -->
+
 </Base>
+
+<script>
+  import { Swiper } from "swiper";
+  import "swiper/css";
+  import "swiper/css/pagination";
+  import { Autoplay, Pagination } from "swiper/modules";
+
+  // astro:page-load event is fired when the page is loaded
+  document.addEventListener("astro:page-load", () => {
+    new Swiper(".service-carousel .swiper", {
+      modules: [Pagination, Autoplay],
+      // autoplay: {
+      //   delay: 3000,
+      // },
+      pagination: {
+        type: "bullets",
+        el: ".service-carousel .pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
