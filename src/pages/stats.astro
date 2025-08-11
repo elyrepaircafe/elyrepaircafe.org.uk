@@ -1,0 +1,42 @@
+---
+import Base from "@/layouts/Base.astro";
+import { marked } from 'marked';
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+
+const entry = (await getEntry("stats", "-index")) as CollectionEntry<"stats">;
+//const { title, description } = entry.data;
+const { Content } = await entry.render();
+---
+
+<Base title={entry.data.title} description={entry.data.description}>
+  <section class="section">
+    <div class="container">
+      <h1 class="text-center font-normal" set:html={marked(entry.data.description)}/>
+      <div class="content">
+        <Content />
+      </div>
+      <div class="section row pb-0">
+        <!--div class="md:col-126 col-12 mx-auto content-center lg:col-12"-->
+        <div class="md:col-126 col-12 lg:col-12 flex flex-col items-center space-y-4">
+          <iframe 
+              src="https://restarters.net/group/stats/1006" 
+              loading="lazy"
+              
+              height="165"
+              min-width= "400px"
+                max-width= "900px"
+                width = "100%"
+              title="Ely Repair Cafe stats"></iframe>
+            <iframe 
+              src="https://restarters.net/outbound/info/group/1006/leaf" 
+              loading="lazy" 
+              width="700" 
+              height="370"
+              title="Ely Repair Cafe carbon count"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

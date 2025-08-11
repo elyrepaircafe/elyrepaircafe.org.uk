@@ -215,4 +215,5 @@ export const collections = {
   faq: faqCollection,
   donate: donateCollection,
   book: bookCollection,
+  stats: bookCollection,
 };

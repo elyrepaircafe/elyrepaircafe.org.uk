@@ -21,7 +21,10 @@ const { footer_content, copyright } = config.params;
           <Social source={social} className="social-icons" />
         </div>
         <p class="text-sm text-center" set:html={markdownify(copyright)} />
-        <a href="/privacy-policy" class="text-sm hover:underline">Privacy Policy</a>
+        <div>
+          <a href="/privacy-policy" class="text-sm hover:underline">Privacy Policy</a> &nbsp;| &nbsp;
+          <a href="/stats" class="text-sm hover:underline">Event Statistics</a>
+        </div>
     </div>
   </div>
 </footer>
