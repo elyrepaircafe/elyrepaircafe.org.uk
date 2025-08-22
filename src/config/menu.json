@@ -13,8 +13,8 @@
       "url": "/faq"
     },
     {
-      "name": "Donate",
-      "url": "/donate"
+      "hide_name": "Donate",
+      "hide_url": "/donate"
     },
     {
       "name": "Blog",
