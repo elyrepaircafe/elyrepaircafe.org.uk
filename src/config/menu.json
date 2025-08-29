@@ -5,16 +5,16 @@
       "hide_url": "/contact"
     },
     {
-      "hide_name": "Book",
-      "hide_url": "/book"
+      "hide_name": "Donate",
+      "hide_url": "/donate"
+    },
+    {
+      "name": "Book",
+      "url": "/book"
     },
     {
       "name": "FAQ",
       "url": "/faq"
-    },
-    {
-      "hide_name": "Donate",
-      "hide_url": "/donate"
     },
     {
       "name": "Blog",

@@ -4,7 +4,7 @@ banner:
   content: Ely Repair Café is a community event that brings together people with broken stuff with people who like to fix things.
   image: "/images/hero.svg"
   button:
-    enable: false
+    enable: true
     label: "Book an item for repair"
     link: "/book"
 
@@ -38,7 +38,7 @@ call_to_action:
   old_content: Ely Repair Café is planned to run once every 3 months, on the last Saturday of the month. The next event date is planned for October, but has not yet been confirmed. We will update this website when the date is confirmed and re-open the booking service a couple of months before the event.
   image: "/images/cta.svg"
   button:
-    enable: false
+    enable: true
     label: "Book an item for repair"
     link: "/book"
 ---
