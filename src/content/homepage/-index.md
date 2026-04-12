@@ -1,7 +1,11 @@
 ---
 banner:
   title: Would you like a hand fixing something?
-  content: Ely Repair Café is a community event that brings together people with broken stuff with people who like to fix things. Our next event should be in July, come back later for more details.
+  content: |
+    <div class="notice notice-info">
+      Unfortunately we have had to cancel our event that was planned for 25th April.
+    </div>
+    Ely Repair Café is a community event that brings together people with broken stuff with people who like to fix things. Our next event should be in July, come back later for more details.
   image: "/images/hero.svg"
   button:
     enable: false
@@ -13,10 +17,7 @@ banner:
 call_to_action:
   title: When is the next event?
   content: |
-    <div class="notice notice-info">
-    Unfortuantely we have had to cancel our event this April 25th.
-    </div>
-    <br><br>
+    Please note the event that was planned for 25th April has been cancelled.<br><br>
     Ely Repair Café is planned to run once every 3 months, on the last Saturday of the month. The next Ely Repair Café is taking place at Ely Library between 11am and 2pm on Saturday, 25th July 2026 and we'd love to see you there.<br><br>
     If you are interested in helping out to organise and run these events then do get in touch with us.
   
