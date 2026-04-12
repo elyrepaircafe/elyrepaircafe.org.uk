@@ -12,12 +12,13 @@ banner:
 # call_to_action
 call_to_action:
   title: When is the next event?
-  content:|
-  Unfortuantely we have had to cancel our event this April.
- 
-  Ely Repair Café is planned to run once every 3 months, on the last Saturday of the month. The next Ely Repair Café is taking place at Ely Library between 11am and 2pm on Saturday, 25th July 2026 and we'd love to see you there.
+  content: |
   
-  If you are interested in helping out to organise and run these events then do get in touch with us.
+    Unfortuantely we have had to cancel our event this April.
+    
+    Ely Repair Café is planned to run once every 3 months, on the last Saturday of the month. The next Ely Repair Café is taking place at Ely Library between 11am and 2pm on Saturday, 25th July 2026 and we'd love to see you there.
+    
+    If you are interested in helping out to organise and run these events then do get in touch with us.
   
   old_content: Ely Repair Café is planned to run once every 3 months, on the last Saturday of the month. The next event date is planned for January 2026, but has not yet been confirmed. We will update this website when the date is confirmed and re-open the booking service a couple of months before the event.
   image: "/images/cta.svg"
