@@ -19,17 +19,18 @@ const homepageCollection = defineCollection({
           .optional(),
       })
       .optional(),
-    feature: z.object({
-      title: z.string(),
-      features: z.array(
-        z.object({
-          name: z.string(),
-          icon: z.string().optional(),
-          content: z.string().optional(),
-        }),
-    
-      ),
-    }),
+    feature: z
+  .object({
+    title: z.string(),
+    features: z.array(
+      z.object({
+        name: z.string(),
+        icon: z.string().optional(),
+        content: z.string().optional(),
+      }),
+    ),
+  })
+  .optional(),
     services: z
       .array(
         z.object({

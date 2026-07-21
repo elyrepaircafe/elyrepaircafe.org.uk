@@ -1,9 +1,13 @@
 html {
   @apply text-base;
+  height: 100%;
 }
 
 body {
   @apply bg-body font-primary font-normal leading-relaxed text-text;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
